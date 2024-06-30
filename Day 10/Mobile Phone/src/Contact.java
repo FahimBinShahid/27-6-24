@@ -1,18 +1,29 @@
-public class Contact {
-    private String name;
-    private String phoneNumber;
+package com.learnJava;
 
-    public Contact(String name, String phoneNumber){
+public class Contact {
+
+    private String name;
+    private int number;
+
+    public Contact(String name, int number) {
         this.name = name;
-        this.phoneNumber = phoneNumber;
+        this.number = number;
     }
-    public String getName(){
+
+    // Getters and setters
+    public String getName() {
         return name;
     }
-    public String getPhoneNumber(){
-        return phoneNumber;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public static Contact createContact(String name, String phoneNumber){
-        return new Contact(name, phoneNumber);
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 }
